@@ -65,7 +65,7 @@ playAgain.addEventListener('click', function () {
   secretNumber = Math.trunc(Math.random() * 20) + 1;
   messageText.textContent = 'Start guessing...';
   scoreText.textContent = score;
-  guess.value = '';
+  document.querySelector('.guess').value = '';
   changeBackground('#222');
   changeWidth('15rem');
   number.textContent = '?';
